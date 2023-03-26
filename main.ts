@@ -52,7 +52,7 @@ makerbit.onIrButton(IrButton.Down, IrButtonAction.Released, function () {
 })
 makerbit.onIrButton(IrButton.Star, IrButtonAction.Pressed, function () {
     SuperBit.MotorRun(SuperBit.enMotors.M3, 255)
-    basic.pause(21500)
+    basic.pause(22000)
     SuperBit.MotorStopAll()
 })
 makerbit.onIrButton(IrButton.Up, IrButtonAction.Pressed, function () {
@@ -75,5 +75,5 @@ makerbit.onIrButton(IrButton.Ok, IrButtonAction.Pressed, function () {
 makerbit.onIrButton(IrButton.Number_3, IrButtonAction.Released, function () {
     SuperBit.MotorStopAll()
 })
-makerbit.connectIrReceiver(DigitalPin.P1, IrProtocol.Keyestudio)
-makerbit.connectIrReceiver(DigitalPin.P0, IrProtocol.Keyestudio)
+makerbit.connectIrReceiver(DigitalPin.P0, IrProtocol.NEC)
+makerbit.connectIrReceiver(DigitalPin.P1, IrProtocol.NEC)
