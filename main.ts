@@ -52,7 +52,7 @@ makerbit.onIrButton(IrButton.Down, IrButtonAction.Released, function () {
 })
 makerbit.onIrButton(IrButton.Star, IrButtonAction.Pressed, function () {
     SuperBit.MotorRun(SuperBit.enMotors.M3, 255)
-    basic.pause(22000)
+    basic.pause(21500)
     SuperBit.MotorStopAll()
 })
 makerbit.onIrButton(IrButton.Up, IrButtonAction.Pressed, function () {
